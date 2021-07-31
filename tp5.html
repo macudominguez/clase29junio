@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Form</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <form action="procesa.php" method="post">    
+        <fieldset>  
+        <legend>Your Details:</legend> 
+        <label>Name:    
+        <input type="text" name="name"><label><br>  
+        <label>Email:
+        <input type="text" name="email"></label>
+         </label>    
+       </fieldset>
+
+       <form action="procesa.php" method="post">
+       <fieldset>  
+        <p>How did you hear about us?</p>
+        <legend>Your Review:</legend> 
+        <select name="paginas">   
+            
+            <option value="google">Google</option>  
+            <option value="facebook">Facebook</option>
+            <option value="twitter">Twitter</option>
+       
+        </select>
+
+        <form action="procesa.php" method="post">   
+            <p>Would you visit again?</p>   
+            <input type="radio" name="genero" value="yes">Yes   
+            <input type="radio" name="genero" value="no">No  
+            <input type="radio" name="genero" value="yes">Maybe
+
+        <form action="procesa.php" method="post">
+            <p>Comments:</p>
+            <textarea name="comentario">
+            </textarea>
+
+        </form>
+        
+        <form action="procesa.php" method="post">   
+            <p>Sign me up for email updates</p>
+            <input type="checkbox" name="genero" value="">
+
+        </form>
+
+        <input type="submit" value="Submit Review">
+
+       </fieldset>
+
+    </body>
+</html>
